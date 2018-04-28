@@ -9,3 +9,11 @@ console.log(soliloquy.includes('question'))
 console.log(soliloquy.includes('nonexistent'))
 console.log(soliloquy.includes('To be',1))
 console.log(soliloquy.includes('TO BE'))
+
+let N = soliloquy.length
+
+for (let i = 0; i < N; i++){
+    // console.log(soliloquy.charAt(i))
+    console.log(soliloquy[i])
+
+}
