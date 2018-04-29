@@ -7,13 +7,13 @@ console.log(soliloquyArray)
 let a = "A man, a plan, a canal, Panama"
 aArray = a.split(",")
 
-console.log(aArray.length)
+console.log(aArray)
 
 let aTest = ""
 
 for(let i = 0; i< aArray.length; i++){
-    //console.log (String(aArray[i]).reverse())
-    //aTest = aTest + (aArray[i])
+    
+    aTest = aTest + (aArray[i].toLowerCase().split("").reverse().join(""))
 }
 //console.log(aArray.reverse().join())
-//console.log(aTest)
+console.log(aTest)
