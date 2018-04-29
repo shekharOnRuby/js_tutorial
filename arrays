@@ -1,0 +1,19 @@
+#!/usr/local/bin/node
+console.log('arrays')
+let soliloquy = 'To be or not to be, that is the question.'
+soliloquyArray = soliloquy.split("e")
+console.log(soliloquyArray) 
+
+let a = "A man, a plan, a canal, Panama"
+aArray = a.split(",")
+
+console.log(aArray.length)
+
+let aTest = ""
+
+for(let i = 0; i< aArray.length; i++){
+    //console.log (String(aArray[i]).reverse())
+    //aTest = aTest + (aArray[i])
+}
+//console.log(aArray.reverse().join())
+//console.log(aTest)
