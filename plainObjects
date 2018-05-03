@@ -1,0 +1,11 @@
+#!/usr/local/bin/node
+
+let user = new Object()
+
+user['firstName'] = 'Shekhar'
+user['secondName'] = 'Karande'
+
+console.log(user)
+
+let user2 = new Object({firstName: 'Shekhar', lastName: 'Karande' })
+console.log(user2)
