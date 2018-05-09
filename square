@@ -1,0 +1,22 @@
+#!/usr/local/bin/node
+
+console.log("----------- Square ----------")
+
+function square(a) {
+   return  a*a
+}
+
+let x = 4
+
+console.log(square(x))
+
+
+let alt_square = (x) => {
+
+    return x*x
+}
+
+let y = 5
+
+console.log("-----------Alt  Square ----------")
+console.log(alt_square(y))
