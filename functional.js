@@ -8,4 +8,10 @@ function imperativeMap(states){
     return urlStates
 }
 
+function functionalMap(states){
+return states.map((state => state.toLowerCase().split(/\s+/).join('-')))
+}
+
+
 console.log(imperativeMap(states))
+console.log(functionalMap(states))

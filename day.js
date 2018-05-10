@@ -5,5 +5,5 @@ function dayOfTheWeek(date){
 
 function greeting(date){
     
-    alert(`Hello World !!! , Happy ${dayOfTheWeek(date)}.`)
+    // alert(`Hello World !!! , Happy ${dayOfTheWeek(date)}.`)
 }
