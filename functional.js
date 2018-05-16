@@ -84,14 +84,14 @@ function functionalLengths(states){
 }
 
 function imperativeSumProduct(array){
-    let sumProduct = 0
+    let sumProduct = 1
     array.forEach(function(n){
         sumProduct *= n
     })
     return sumProduct
 }
 function functionalSumProduct(array){
-    return array.reduce((sumProduct, n)=> {return sumProduct += n},0)
+    return array.reduce((sumProduct, n)=> {return sumProduct *= n},1)
 }
 console.log(imperativeLengths(states))
 console.log(functionalLengths(states))
