@@ -45,7 +45,55 @@ function functionalIncludes(states){
     return states.filter(state => state.toLowerCase().includes("dakota"))
 }
 
-console.log(imperativeFilter(states))
-console.log(functionalFilter(states))
-console.log(functionalFilter2(states))
-console.log(functionalIncludes(states))
+// console.log(imperativeFilter(states))
+// console.log(functionalFilter(states))
+// console.log(functionalFilter2(states))
+// console.log(functionalIncludes(states))
+
+
+let a = [1,2,3,4,5,6,7,8,9,10]
+
+function iterativeSum(array){
+    let total = 0
+    array.forEach(function(n){
+        total += n
+    })
+    return total
+}
+
+function functionalSum(array){
+    return array.reduce((total,n)=>{ return total += n})
+}
+
+// console.log(iterativeSum(a))
+// console.log(functionalSum(a))
+
+function imperativeLengths(states){
+    let lengths ={}
+    states.forEach(function(state){
+        lengths[state] = state.length
+    })
+    return lengths
+}
+
+function functionalLengths(states){
+    return states.reduce((lengths, state) => {
+         lengths[state] = state.length
+         return lengths
+        },{})
+}
+
+function imperativeSumProduct(array){
+    let sumProduct = 0
+    array.forEach(function(n){
+        sumProduct *= n
+    })
+    return sumProduct
+}
+function functionalSumProduct(array){
+    return array.reduce((sumProduct, n)=> {return sumProduct += n},0)
+}
+console.log(imperativeLengths(states))
+console.log(functionalLengths(states))
+console.log(imperativeSumProduct(a))
+console.log(functionalSumProduct(a))
