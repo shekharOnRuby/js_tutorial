@@ -5,8 +5,12 @@ function reverse(str){
 function Phrase(content){
     this.content = content
 
+    this.processor = function(string){
+        return string.toLowerCase()
+    }
+
     this.processedContent = function processedContent() {
-        return this.content.toLowerCase()
+        return this.processor(this.content)
     }
 
     this.palindrome = function palindrome(){
@@ -24,7 +28,7 @@ function TranslatedPhrase(content, translation){
     this.translation = translation
 
     this.processedContent = function processedContent(){
-        return this.translation.toLowerCase()
+        return this.processor(this.translation)
     }
 }
 
