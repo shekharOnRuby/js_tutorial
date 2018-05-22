@@ -1,7 +1,10 @@
-function reverse(str){
- return Array.from(str).reverse().join("")
+String.prototype.reverse = function(){
+ return Array.from(this).reverse().join("")
 }
 
+String.prototype.blankString = function(){
+    return this.match(/^\s$/)
+}
 function Phrase(content){
     this.content = content
 
@@ -15,11 +18,15 @@ function Phrase(content){
 
     this.palindrome = function palindrome(){
         
-        return this.processedContent() === reverse(this.processedContent())
+        return this.processedContent() === this.processedContent().reverse()
     }
 
     this.louder = function louder(){
         return this.content.toUpperCase()
+    }
+
+    this.blank = function blank(){
+        return this.blankString()
     }
 }
 
