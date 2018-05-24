@@ -1,0 +1,20 @@
+{
+  "name": "shk-palindrome",
+  "version": "0.1.0",
+  "description": "Palindrome detector",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shekharOnRuby/js_tutorial/tree/master/palindrome"
+  },
+  "keywords": [
+    "palindrome",
+    "learn-enough",
+    "javascript"
+  ],
+  "author": "Shekhar Karande",
+  "license": "ISC"
+}
