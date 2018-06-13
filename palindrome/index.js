@@ -14,12 +14,15 @@ function Phrase(content){
         return string.toLowerCase()
     }
 
+    this.letters = function letters(){
+        return Array.from(this.content).filter(c => c.match(/[a-z]/i)).join("")
+    }
+    
     this.processedContent = function processedContent() {
         return this.processor(this.content)
     }
 
     this.palindrome = function palindrome(){
-        
         return this.processedContent() === this.processedContent().reverse()
     }
 
