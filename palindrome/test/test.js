@@ -7,7 +7,7 @@ describe("Phrase", function(){
             let nonPalindrome = new Phrase("apple")
             assert (!nonPalindrome.palindrome())
         })
-        
+
         it("should return true for a plain palindrome",function(){
             let plainPalindrom = new Phrase("nitin")
             assert (plainPalindrom.palindrome())
@@ -18,14 +18,11 @@ describe("Phrase", function(){
             assert(mixedPalindrom.palindrome())
         })
 
-        
-
-        it ("should return true for a palindrome with punctuation",function(){
+       it ("should return true for a palindrome with punctuation",function(){
             let punctuatedPalindrome = new Phrase("Madam, I'm Adam.")
             assert(punctuatedPalindrome.palindrome())
         })
-        
-        
+
     })
     describe("#letters",function(){
         it("should return only letters",function(){
